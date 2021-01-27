@@ -5,13 +5,14 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import BtnPago from './btnpago'
+import Login from './Login';
 import Home from './Home'
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
       <Switch>
-        <Route exact path="/" component={Home}/>
+        <Route exact path="/" component={Login}/>
         <Route exact path="/pagar" component={BtnPago}/>
         <Route exact path="/pago" component={App}/>
       </Switch>
